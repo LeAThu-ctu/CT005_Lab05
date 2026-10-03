@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <!-- saved from url=(0061)https://github.com/LeAThu-ctu/CT005_Lab05/edit/main/README.md -->
 <html lang="en" data-color-mode="dark" data-light-theme="light" data-dark-theme="dark_colorblind" data-a11y-animated-images="system" data-a11y-link-underlines="true" data-turbo-loaded="" class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
@@ -864,6 +865,9 @@
 
 
 <div class="sr-only mt-n1" id="screenReaderAnnouncementDiv" role="alert" data-testid="screenReaderAnnouncement" aria-live="assertive"></div></body></html>
+=======
+#### CT005 – Lab05 – Lê Anh Thư – B2605378 – Nền tảng công nghệ số(CT005D04)
+>>>>>>> df5e5647fb22f871861d7b38a078c7319012f3aa
 =======
 #### CT005 – Lab05 – Lê Anh Thư – B2605378 – Nền tảng công nghệ số(CT005D04)
 >>>>>>> df5e5647fb22f871861d7b38a078c7319012f3aa
