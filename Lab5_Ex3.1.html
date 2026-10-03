@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lợi ích của công nghệ số trong học tập</title>
+	<title>Hồ sơ cá nhân | Lê Anh Thư</title>
 	<style>
 		:root {
 			--blue-900: #0b3b60;
@@ -54,6 +55,12 @@
 			line-height: 1.15;
 		}
 
+		h3 {
+			margin: 0 0 12px;
+			color: var(--blue-900);
+			font-size: 1.1rem;
+		}
+
 		.intro {
 			max-width: 720px;
 			margin: 0 auto;
@@ -99,11 +106,62 @@
 			padding: 24px;
 		}
 
+		.profile-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 0 28px;
+			margin: 0;
+		}
+
+		.profile-item {
+			display: grid;
+			grid-template-columns: 112px minmax(0, 1fr);
+			gap: 12px;
+			padding: 12px 0;
+			border-bottom: 1px solid #e6f0f5;
+		}
+
+		.profile-item dt {
+			color: var(--muted);
+		}
+
+		.profile-item dd {
+			margin: 0;
+			font-weight: 600;
+		}
+
+		.profile-description,
+		.product-description {
+			margin: 0;
+			color: var(--muted);
+		}
+
+		.profile-description {
+			margin-top: 22px;
+		}
+
+		.pdf-link {
+			display: inline-block;
+			margin-top: 18px;
+			padding: 11px 18px;
+			border-radius: 6px;
+			background: var(--blue-700);
+			color: var(--white);
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		.pdf-link:hover,
+		.pdf-link:focus-visible {
+			background: var(--blue-900);
+		}
+
 		.infographic {
 			display: block;
-			width: 100%;
+			width: min(100%, 900px);
 			height: auto;
 			max-height: 720px;
+			margin: 20px auto 0;
 			object-fit: contain;
 			border: 1px solid #e0edf3;
 			border-radius: 8px;
@@ -155,9 +213,18 @@
 			.content {
 				padding: 18px;
 			}
+
+			.profile-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.profile-item {
+				grid-template-columns: 96px minmax(0, 1fr);
+			}
 		}
 	</style>
 </head>
+
 <body>
 	<div class="page">
 		<header>
@@ -170,24 +237,69 @@
 		</header>
 
 		<main>
-			<section class="section" aria-labelledby="infographic-title">
-				<h2 class="section-heading" id="infographic-title">Infographic</h2>
+			<section class="section" aria-labelledby="profile-title">
+				<h2 class="section-heading" id="profile-title">Giới thiệu bản thân</h2>
 				<div class="content">
-					<img class="infographic" src="Lab05_Ex2.1.png" alt="Infographic về lợi ích của công nghệ số trong học tập">
+					<dl class="profile-grid">
+						<div class="profile-item">
+							<dt>Họ và tên</dt>
+							<dd>Lê Anh Thư</dd>
+						</div>
+						<div class="profile-item">
+							<dt>MSSV</dt>
+							<dd>B2605378</dd>
+						</div>
+						<div class="profile-item">
+							<dt>Lớp</dt>
+							<dd>DI26D1A2</dd>
+						</div>
+						<div class="profile-item">
+							<dt>Ngành</dt>
+							<dd>Truyền thông đa phương tiện</dd>
+						</div>
+						<div class="profile-item">
+							<dt>Trường</dt>
+							<dd>Đại học Cần Thơ</dd>
+						</div>
+					</dl>
+					<p class="profile-description">
+						Em là sinh viên ngành Truyền thông đa phương tiện tại Đại học Cần Thơ. Em thực hiện các sản phẩm
+						này để tìm hiểu lợi ích của công nghệ số trong học tập và rèn luyện kỹ năng tạo nội dung, thiết
+						kế infographic, trình bày tài liệu và video.
+					</p>
+				</div>
+			</section>
+
+			<section class="section" aria-labelledby="pdf-title">
+				<h2 class="section-heading" id="pdf-title">Sản phẩm 1 – File PDF</h2>
+				<div class="content">
+					<h3>Tài liệu nhiệm vụ 1.2</h3>
+					<p class="product-description">File PDF tổng hợp sản phẩm thực hiện trong nhiệm vụ 1.2.</p>
+					<a class="pdf-link" href="Lab05_Ex1.2.pdf" target="_blank" rel="noopener noreferrer">Mở / xem file
+						PDF</a>
+				</div>
+			</section>
+
+			<section class="section" aria-labelledby="infographic-title">
+				<h2 class="section-heading" id="infographic-title">Sản phẩm 2 – Infographic</h2>
+				<div class="content">
+					<p class="product-description">Infographic trình bày những lợi ích của công nghệ số đối với việc học
+						tập.</p>
+					<img class="infographic" src="Lab05_Ex2.1.png"
+						alt="Infographic về lợi ích của công nghệ số trong học tập">
 				</div>
 			</section>
 
 			<section class="section" aria-labelledby="video-title">
-				<h2 class="section-heading" id="video-title">Video giới thiệu</h2>
+				<h2 class="section-heading" id="video-title">Sản phẩm 3 – Video</h2>
 				<div class="content">
+					<p class="product-description">Video minh họa nội dung về công nghệ số trong học tập.</p>
 					<div class="video-frame">
-						<iframe src="https://www.youtube.com/embed/7wkxx9XJkXc"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-                        </iframe>
+						<iframe src="https://www.youtube.com/embed/7wkxx9XJkXc?vq=hd1080"
+							title="Video về công nghệ số trong học tập"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+						</iframe>
 					</div>
 					<a class="video-link" href="https://youtu.be/7wkxx9XJkXc" target="_blank" rel="noopener noreferrer">
 						Mở video trên YouTube
@@ -197,8 +309,10 @@
 		</main>
 
 		<footer>
-			Nội dung văn bản tham khảo từ Google Gemini, hình ảnh từ Unsplash (Unsplash license). Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0).
+			Nội dung văn bản tham khảo từ Google Gemini, hình ảnh từ Unsplash (Unsplash license). Video tạo bởi CapCut,
+			tài liệu từ Pexels/FreeSound (CC0).
 		</footer>
 	</div>
 </body>
+
 </html>
